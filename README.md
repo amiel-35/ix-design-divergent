@@ -68,7 +68,7 @@ Five findings from real runs, each detailed in [the method](docs/en/method.md):
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TD
     R([Your request]) --> S0[0 · Clean the brief<br/>use, not artefact]
     S0 --> S1[1 · 6 to 8 orthogonal<br/>mandates + 1 rupture]
     S1 -->|you pick 3 + rupture| S2[2 · 4 Sonnet agents, blind<br/>each writes its default,<br/>then drops it]

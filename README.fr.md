@@ -69,7 +69,7 @@ Cinq constats tirés de runs réels, détaillés dans [la méthode](docs/fr/meth
 ## Comment ça marche
 
 ```mermaid
-flowchart LR
+flowchart TD
     R([Ta demande]) --> S0[0 · Nettoyer le brief<br/>l'usage, pas l'artefact]
     S0 --> S1[1 · 6 à 8 mandats<br/>orthogonaux + 1 rupture]
     S1 -->|tu en choisis 3 + la rupture| S2[2 · 4 agents Sonnet en aveugle<br/>chacun écrit son défaut,<br/>puis l'écarte]
