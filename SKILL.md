@@ -1,6 +1,6 @@
 ---
 name: design-divergent
-description: Makes a creative brief truly diverge (screen, visual identity, motion film, visual). Strips the brief of any solution already drawn into it, proposes orthogonal aesthetic mandates for the user to pick, runs 3 Sonnet variants plus one rupture variant, blind, each after writing down and then discarding its default proposal. The user decides on the pieces; on request only, a Sonnet agent composes a direction from them. Use on "/design-divergent", "make it diverge", "I want really different directions", "give me design options", "fais diverger", "propose-moi des pistes de design", or whenever design proposals all look alike.
+description: Makes a creative brief truly diverge (screen, visual identity, motion film, visual). Strips the brief of any solution already drawn into it, proposes aesthetic mandates that each look somewhere else, for the user to pick, runs 3 Sonnet variants plus one rupture variant, blind, each after writing down and then discarding its default proposal. The user decides on the pieces; on request only, a Sonnet agent composes a direction from them. Use on "/design-divergent", "make it diverge", "I want really different directions", "give me design options", "fais diverger", "propose-moi des pistes de design", or whenever design proposals all look alike.
 ---
 
 # Design divergent
@@ -10,9 +10,11 @@ lets the user decide on visible pieces, and composes a direction from them
 only if asked. It rests on five real runs,
 described in `docs/en/cases.md`. Talk to the user in their language.
 
-If a `local.md` file sits next to this `SKILL.md`, read it first: it holds the
-user's own hard constraints and conventions, and they override the defaults
-below.
+If a `local.md` file sits next to this `SKILL.md`, or if
+`~/.claude/design-divergent.local.md` exists (the place to use when the skill
+is installed as a plugin, since a plugin update replaces its folder), read it
+first: it holds the user's own hard constraints and conventions, and they
+override the defaults below.
 
 ## What to know before starting
 
@@ -28,8 +30,9 @@ below.
   its default proposal, then forbid it.
 - **A ban moves convergence, it does not remove it.** It gets you out of a
   rut, it does not create diversity.
-- **To diverge, mandates must be orthogonal, not opposite.** A "do the
-  opposite" mandate produces a manufactured disagreement that teaches nothing.
+- **Different angles, not opposites.** Each mandate looks somewhere else;
+  none is the reverse of another. A "do the opposite" mandate produces a
+  manufactured disagreement that teaches nothing.
 
 ## Cost
 
@@ -71,7 +74,7 @@ reason for each removal.
 
 1. First write, for yourself, the mandate you would propose by default. Record
    it in one line, under the heading "default mandate, discarded".
-2. Propose **6 to 8 orthogonal mandates**: aesthetic stances or points of
+2. Propose **6 to 8 mandates that each look somewhere else**: aesthetic stances or points of
    view (for example "Swiss editorial", "mainstream sports", "Japanese
    emptiness"), never objects to draw. No two mandates may be the same one
    with a different setting, nor the opposite of each other.
@@ -194,10 +197,3 @@ In the divergence folder:
 - the variants stay where they are: they were used to compose the direction.
 
 Nothing is applied to the real deliverable without the user asking for it.
-
-## What we do not know yet
-
-See `docs/en/open-questions.md`. In short: one run per cell, and two
-variables changed at once in the founding test. The composition became
-optional and moved from Opus to Sonnet after the two most recent runs, where
-the user kept one piece as it was.

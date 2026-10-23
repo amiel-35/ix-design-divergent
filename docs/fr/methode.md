@@ -1,8 +1,7 @@
 # Ce qu'on sait
 
 Dix constats tirés de cinq runs réels (voir [cas.md](cas.md)). Chacun dit d'où
-il vient. Ce qui n'est pas établi est dans
-[questions-ouvertes.md](questions-ouvertes.md).
+il vient.
 
 ## 1. La variance vient du brief, pas du modèle
 
@@ -39,11 +38,14 @@ IBM Plex et les fonds crème interdits, tout le monde a basculé sur
 l'instrument sombre. Les interdits servent à sortir d'une ornière, pas à
 ouvrir le champ. *Cas 2.*
 
-## 6. Orthogonal n'est pas opposé
+## 6. Des angles différents, pas des contraires
 
-Deux mandats qui ne regardent pas la même chose révèlent ce qu'on avait
-oublié. Deux mandats opposés (« fais l'inverse ») fabriquent un désaccord par
-construction, qui ne dit rien. *Principe retenu au cas 1, pas mesuré.*
+Un mandat contraire pousse le même curseur à l'autre bout : sombre contre
+clair, dense contre épuré. Les deux répondent à la même question, ils se
+contredisent forcément, et tu le savais avant de les lancer. Un angle
+différent pose une autre question : « comment on lit un tableau de gare en
+marchant ? » contre « comment une une de journal hiérarchise une seule grosse
+nouvelle ? ». Chacun montre ce que les autres ne voient pas. *Principe retenu au cas 1, pas mesuré.*
 
 ## 7. Les skills fixent le plancher, le modèle fixe le plafond
 
@@ -86,4 +88,4 @@ la composition a été rejetée : trop chargée la première fois, « rien cré�
 la seconde. L'utilisateur a gardé une seule pièce telle quelle, la variante de
 rupture au cas 4 et sa propre version d'avant la divergence au cas 5. Depuis, la composition est
 une option, proposée après que l'utilisateur a vu les variantes, et elle
-tourne sur Sonnet. Voir [questions-ouvertes.md](questions-ouvertes.md).
+tourne sur Sonnet.

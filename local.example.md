@@ -1,6 +1,7 @@
 # Local settings (example)
 
-Copy this file to `local.md` next to `SKILL.md`. `local.md` is ignored by git:
+Copy this file to `local.md` next to `SKILL.md` (folder install), or to
+`~/.claude/design-divergent.local.md` (plugin install). `local.md` is ignored by git:
 put there what only applies to you. The skill reads it first and it overrides
 the defaults.
 

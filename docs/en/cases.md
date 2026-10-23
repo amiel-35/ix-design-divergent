@@ -3,14 +3,17 @@
 Five real runs, between August and October 2026, described without the
 projects' names or data. The numbers are referenced in [method.md](method.md).
 
-## Case 1 · Designing a panel of agents (August)
+## Case 1 · Vary the models or vary the angles? (August)
 
 **The question:** to have a decision critiqued by several agents, should you
 vary the models or vary the angles?
-**What came out:** orthogonal angles rather than opposite ones. It was not a
+**What came out:** different angles, not opposites. It was not a
 design test, but it is where the mandate rule was born.
 
-## Case 2 · A cycling app, "which way do I ride" (September)
+*A manufactured disagreement teaches you nothing. Two views that do not look
+at the same thing do.*
+
+## Case 2 · Three models, one screen (September)
 
 **The need:** a cyclist, at home, before heading out, wants to know which way
 to ride given the wind and the weather. Three seconds and a thumb.
@@ -24,7 +27,9 @@ different proposals.
 we refused to take from it. Three variants out of four had, unasked, made the
 disagreement between weather models their finest element.
 
-## Case 3 · A brand showreel (October)
+*The model was not the problem. The brief had already drawn the screen.*
+
+## Case 3 · Blind Sonnet against well-fed Opus (October)
 
 **The need:** a short film presenting a consulting practice.
 **The test:** Sonnet, blind and from scratch, against a fourth version by Opus
@@ -34,7 +39,10 @@ visual idea, but missed on judgement (reading rule, signature line). Opus did
 the merge. The test was not neutral: the two did not start from the same
 point. Measured cost: about 12 minutes and 185,000 tokens per variant.
 
-## Case 4 · A teenager's home screen in a home-automation app (October)
+*The one who saw nothing had the idea. The one who knew everything finished
+the job.*
+
+## Case 4 · A screen a teenager opens on their own? (October)
 
 **The need:** a high-school student opens the app on their phone in the
 evening and in the morning. They want to know whether their alarm is set and
@@ -49,7 +57,9 @@ was rejected because it put several blocks back on the first screen. All five
 variants reordered the screen according to the time of day, though four of
 them had not received that as their mandate.
 
-## Case 5 · The idle screen of a wall tablet (October)
+*When the best idea is to remove, composing means putting back.*
+
+## Case 5 · Eight defaults, one screen (October)
 
 **The need:** a tablet on the living-room wall. People walk past two to four
 metres away, without stopping, in dim light. In under two seconds, they know
@@ -65,3 +75,6 @@ built on the skeleton of variant 0, was judged to bring no new idea. All
 eight variants handed the state of the house to a single object that changes
 nature (a dot, a needle, a flat colour, a label), without the brief asking
 for it.
+
+*Either the divergence confirmed a choice, or we prefer what we already made.
+We do not know which yet.*

@@ -63,15 +63,15 @@ Cinq constats tirés de runs réels, détaillés dans [la méthode](docs/fr/meth
   passant est traitée comme un cahier des charges.
 - **Demander de l'audace ne produit rien.** Faire écrire au modèle son défaut,
   puis le lui interdire, si.
-- **Des mandats orthogonaux, pas opposés.** « Fais l'inverse » fabrique un
-  désaccord qui n'apprend rien.
+- **Des angles différents, pas des contraires.** Chaque mandat regarde
+  ailleurs. « Fais l'inverse » fabrique un désaccord qui n'apprend rien.
 
 ## Comment ça marche
 
 ```mermaid
 flowchart TD
     R([Ta demande]) --> S0[0 · Nettoyer le brief<br/>l'usage, pas l'artefact]
-    S0 --> S1[1 · 6 à 8 mandats<br/>orthogonaux + 1 rupture]
+    S0 --> S1[1 · 6 à 8 mandats qui<br/>regardent ailleurs + 1 rupture]
     S1 -->|tu en choisis 3 + la rupture| S2[2 · 4 agents Sonnet en aveugle<br/>chacun écrit son défaut,<br/>puis l'écarte]
     S2 --> S3[3 · L'attracteur<br/>ce que les défauts partagent]
     S3 --> S4{4 · Tu tranches<br/>sur pièces visibles}
@@ -92,21 +92,35 @@ flowchart TD
 
 ## Démarrage rapide
 
+En plugin, depuis le catalogue de l'auteur :
+
+```bash
+claude plugin marketplace add amiel-35/plugins
+claude plugin install design-divergent@amiel-35
+```
+
+Ou en simple dossier de skill, si tu veux le lire et le modifier sur place :
+
 ```bash
 git clone https://github.com/amiel-35/ix-design-divergent ~/.claude/skills/design-divergent
 ```
 
+L'un ou l'autre : le même skill installé des deux façons apparaît deux fois.
 Relance Claude Code, puis :
 
 - *« /design-divergent l'écran d'accueil de notre appli de facturation »*
 - *« Ces trois propositions de landing page se ressemblent toutes, fais diverger. »*
 - *« Propose-moi des pistes vraiment différentes pour ce générique de 20 secondes. »*
 
-Pour mettre à jour : `git -C ~/.claude/skills/design-divergent pull`.
+Pour mettre à jour : `claude plugin marketplace update amiel-35`, puis
+`claude plugin update design-divergent@amiel-35`, ou
+`git -C ~/.claude/skills/design-divergent pull` pour le dossier.
 
 ### Tes propres contraintes
 
-Copie `local.example.md` en `local.md` dans le même dossier. Le skill le lit
+Copie `local.example.md` en `local.md` dans le dossier du skill (installation
+en dossier), ou en `~/.claude/design-divergent.local.md` (installation en
+plugin, puisqu'une mise à jour du plugin remplace son dossier). Le skill le lit
 en premier : mets-y ton design system (ce qui ne diverge jamais : palette,
 typo, logo), les outils que tu ne veux jamais voir utilisés, ta langue et
 l'endroit où garder le journal des runs. `local.md` est ignoré par git.
@@ -124,7 +138,6 @@ livrables qui comptent, pas pour une retouche.
 |---|---|---|
 | Dix constats, chacun avec le cas d'où il vient | [methode.md](docs/fr/methode.md) | [method.md](docs/en/method.md) |
 | Les cinq runs réels, anonymisés | [cas.md](docs/fr/cas.md) | [cases.md](docs/en/cases.md) |
-| Ce qu'on ne sait pas encore | [questions-ouvertes.md](docs/fr/questions-ouvertes.md) | [open-questions.md](docs/en/open-questions.md) |
 | Le skill lui-même | | [SKILL.md](SKILL.md) |
 
 ## Limites
@@ -133,8 +146,7 @@ livrables qui comptent, pas pour une retouche.
 > Cinq runs, une exécution par case. Ce sont des notes de terrain, pas un
 > benchmark. Dans le test fondateur, deux variables changeaient à la fois, et
 > l'étape de composition est devenue optionnelle après avoir été rejetée deux
-> fois de suite. Tout est dans [questions-ouvertes.md](docs/fr/questions-ouvertes.md).
-> Les runs qui contredisent tout ça sont bienvenus en issue.
+> fois de suite. Les runs qui contredisent tout ça sont bienvenus en issue.
 
 ## Projets frères
 

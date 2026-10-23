@@ -16,7 +16,7 @@
     <line x1="257" y1="175" x2="287" y2="145" stroke="#9a9fae" stroke-width="2.5"/>
   </g>
 
-  <!-- quatre mandats orthogonaux, quatre formes -->
+  <!-- quatre mandats, quatre angles, quatre formes -->
   <g fill="none" stroke-width="3" stroke-linecap="round">
     <path d="M60 160 C 120 110, 250 46, 414 46" stroke="#e07a5f"/>
     <path d="M60 160 C 140 128, 290 118, 426 118" stroke="#3d9a8b"/>

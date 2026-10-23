@@ -1,0 +1,15 @@
+{
+  "name": "ix-design-divergent",
+  "description": "Make design proposals really diverge. Vary the brief, not the model.",
+  "owner": {
+    "name": "Amiel Lavon",
+    "url": "https://github.com/amiel-35"
+  },
+  "plugins": [
+    {
+      "name": "design-divergent",
+      "source": "./dist",
+      "description": "Make design proposals really diverge. Cleans the brief of hidden design decisions, runs four blind Sonnet variants each against its own default, shows the attractor, and lets you decide on visible pieces."
+    }
+  ]
+}

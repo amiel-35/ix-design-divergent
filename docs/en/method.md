@@ -1,8 +1,7 @@
 # What we know
 
 Ten findings drawn from five real runs (see [cases.md](cases.md)). Each says
-where it comes from. What is not established is in
-[open-questions.md](open-questions.md).
+where it comes from.
 
 ## 1. Variance comes from the brief, not from the model
 
@@ -37,11 +36,14 @@ clock). *Cases 2, 4, 5.*
 With IBM Plex and cream backgrounds banned, everyone switched to the dark
 instrument. Bans get you out of a rut, they do not open the field. *Case 2.*
 
-## 6. Orthogonal is not opposite
+## 6. Different angles, not opposites
 
-Two mandates that do not look at the same thing reveal what you had
-forgotten. Two opposite mandates ("do the reverse") manufacture a
-disagreement by construction, which says nothing. *Principle adopted in case
+An opposite mandate pushes the same slider to the other end: dark against
+light, dense against sparse. Both answer the same question, they contradict
+each other by construction, and you knew it before running them. A different
+angle asks another question: "how do you read a station board while
+walking?" against "how does a front page rank one big story?". Each one
+shows what the others do not see. *Principle adopted in case
 1, not measured.*
 
 ## 7. Skills set the floor, the model sets the ceiling
@@ -84,5 +86,4 @@ the third). Hence the composition step of the skill. But in cases 4 and 5, the c
 was rejected: too busy the first time, "created nothing" the second. The user
 kept a single piece as it was, the rupture variant in case 4 and their own
 pre-divergence version in case 5. Since then the composition is an option,
-offered after the user has seen the variants, and it runs on Sonnet. See
-[open-questions.md](open-questions.md).
+offered after the user has seen the variants, and it runs on Sonnet.

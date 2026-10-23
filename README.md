@@ -62,15 +62,15 @@ Five findings from real runs, each detailed in [the method](docs/en/method.md):
   it gets treated as a spec.
 - **Asking for boldness produces nothing.** Making the model write its default,
   then forbidding it, does.
-- **Mandates must be orthogonal, not opposite.** "Do the reverse" manufactures
-  a disagreement that teaches nothing.
+- **Different angles, not opposites.** Each mandate looks somewhere else.
+  "Do the reverse" manufactures a disagreement that teaches nothing.
 
 ## How it works
 
 ```mermaid
 flowchart TD
     R([Your request]) --> S0[0 · Clean the brief<br/>use, not artefact]
-    S0 --> S1[1 · 6 to 8 orthogonal<br/>mandates + 1 rupture]
+    S0 --> S1[1 · 6 to 8 mandates, each<br/>looking elsewhere + 1 rupture]
     S1 -->|you pick 3 + rupture| S2[2 · 4 Sonnet agents, blind<br/>each writes its default,<br/>then drops it]
     S2 --> S3[3 · The attractor<br/>what the defaults share]
     S3 --> S4{4 · You decide<br/>on visible pieces}
@@ -91,22 +91,35 @@ flowchart TD
 
 ## Quick start
 
+As a plugin, from the author's catalogue:
+
+```bash
+claude plugin marketplace add amiel-35/plugins
+claude plugin install design-divergent@amiel-35
+```
+
+Or as a plain skill folder, if you want to read and edit it in place:
+
 ```bash
 git clone https://github.com/amiel-35/ix-design-divergent ~/.claude/skills/design-divergent
 ```
 
-Restart Claude Code, then:
+Pick one: the same skill installed both ways shows up twice. Restart Claude
+Code, then:
 
 - *"/design-divergent the onboarding screen of our invoicing app"*
 - *"These three landing page proposals all look alike, make it diverge."*
 - *"Give me really different directions for this 20-second motion intro."*
 
-To update: `git -C ~/.claude/skills/design-divergent pull`.
+To update: `claude plugin marketplace update amiel-35`, then
+`claude plugin update design-divergent@amiel-35`, or
+`git -C ~/.claude/skills/design-divergent pull` for the folder install.
 
 ### Your own constraints
 
-Copy `local.example.md` to `local.md` in the same folder. The skill reads it
-first: put there your design system (what may never diverge: palette, type,
+Copy `local.example.md` to `local.md` in the skill folder (folder install),
+or to `~/.claude/design-divergent.local.md` (plugin install, since a plugin
+update replaces its folder). The skill reads it first: put there your design system (what may never diverge: palette, type,
 logo), the tools you never want used, your language and where to log runs.
 `local.md` is ignored by git.
 
@@ -123,7 +136,6 @@ matter, not for a touch-up.
 |---|---|---|
 | Ten findings, each with the case it comes from | [method.md](docs/en/method.md) | [methode.md](docs/fr/methode.md) |
 | The five real runs, anonymised | [cases.md](docs/en/cases.md) | [cas.md](docs/fr/cas.md) |
-| What we do not know yet | [open-questions.md](docs/en/open-questions.md) | [questions-ouvertes.md](docs/fr/questions-ouvertes.md) |
 | The skill itself | [SKILL.md](SKILL.md) | |
 
 ## Limits
@@ -132,8 +144,7 @@ matter, not for a touch-up.
 > Five runs, one execution per cell. The findings are field notes, not a
 > benchmark. In the founding test two variables changed at once, and the
 > composition step was made optional after the user rejected it twice in a row.
-> All of it is in [open-questions.md](docs/en/open-questions.md). Runs that
-> contradict it are welcome as issues.
+> Runs that contradict it are welcome as issues.
 
 ## Sibling projects
 
