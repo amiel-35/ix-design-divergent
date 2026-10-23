@@ -80,7 +80,9 @@ that appears *between* different mandates is a signal to keep. *Cases 2, 4,
 
 In case 2, the chosen direction was none of the proposals: it was an
 assembly (the grid of one, the disc of another, "one hue per category" from
-the third). Hence step 4 of the skill. But in cases 4 and 5, the composition
+the third). Hence the composition step of the skill. But in cases 4 and 5, the composition
 was rejected: too busy the first time, "created nothing" the second. The user
 kept a single piece as it was, the rupture variant in case 4 and their own
-pre-divergence version in case 5. See [open-questions.md](open-questions.md).
+pre-divergence version in case 5. Since then the composition is an option,
+offered after the user has seen the variants, and it runs on Sonnet. See
+[open-questions.md](open-questions.md).

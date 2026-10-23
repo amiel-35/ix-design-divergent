@@ -28,10 +28,12 @@ problème, ce n'est pas le modèle, c'est le brief. Ce skill travaille le brief.
    interdiction de le faire.
 4. **Il lit les défauts.** Mis côte à côte, les défauts écartés montrent
    l'*attracteur* : à quoi ressemble le banal sur ce brief.
-5. **Il compose.** Un agent Opus propose une direction faite de morceaux pris
-   aux variantes, et dit ce qu'il refuse de prendre à chacune.
-6. **Tu tranches**, sur pièces visibles. Tes refus sont gardés mot pour mot,
-   comme interdits pour le tour suivant.
+5. **Tu tranches**, sur pièces visibles. Garder une variante telle quelle est
+   une issue valable.
+6. **Il compose, si tu le demandes.** Un agent Sonnet propose une direction
+   faite de morceaux pris à plusieurs variantes, et dit ce qu'il refuse de
+   prendre à chacune. Tes refus sont gardés mot pour mot, comme interdits
+   pour le tour suivant.
 
 ## Installer
 
@@ -58,7 +60,7 @@ comptent, pas aux retouches.
   il vient.
 - [Les cinq cas](docs/fr/cas.md) : des runs réels, anonymisés.
 - [Ce qu'on ne sait pas encore](docs/fr/questions-ouvertes.md), dont la
-  raison pour laquelle la composition a été rejetée aux deux derniers runs.
+  raison pour laquelle la composition est devenue une option.
 
 ## Licence
 

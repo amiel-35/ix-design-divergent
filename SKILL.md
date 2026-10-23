@@ -1,12 +1,13 @@
 ---
 name: design-divergent
-description: Makes a creative brief truly diverge (screen, visual identity, motion film, visual). Strips the brief of any solution already drawn into it, proposes orthogonal aesthetic mandates for the user to pick, runs 3 Sonnet variants plus one rupture variant, blind, each after writing down and then discarding its default proposal. Opus then composes a direction from the pieces. Use on "/design-divergent", "make it diverge", "I want really different directions", "give me design options", "fais diverger", "propose-moi des pistes de design", or whenever design proposals all look alike.
+description: Makes a creative brief truly diverge (screen, visual identity, motion film, visual). Strips the brief of any solution already drawn into it, proposes orthogonal aesthetic mandates for the user to pick, runs 3 Sonnet variants plus one rupture variant, blind, each after writing down and then discarding its default proposal. The user decides on the pieces; on request only, a Sonnet agent composes a direction from them. Use on "/design-divergent", "make it diverge", "I want really different directions", "give me design options", "fais diverger", "propose-moi des pistes de design", or whenever design proposals all look alike.
 ---
 
 # Design divergent
 
 This skill gets design proposals that are really different from one another,
-then composes a direction from the best pieces. It rests on five real runs,
+lets the user decide on visible pieces, and composes a direction from them
+only if asked. It rests on five real runs,
 described in `docs/en/cases.md`. Talk to the user in their language.
 
 If a `local.md` file sits next to this `SKILL.md`, read it first: it holds the
@@ -142,9 +143,21 @@ by side and write in `<folder>/attractor.md`:
 - for each variant, whether it resembles another one's default (if so, it did
   not diverge, and say so).
 
-### Step 4 · Compose
+### Step 4 · The user decides
 
-Launch **one Agent call** with `model: "opus"` and
+Show them the four variants (open the pages or send the files) and the
+attractor. **Their taste decides**, on visible pieces. There is no scoring
+between models. Keeping a single variant as it is, or the version that
+existed before the divergence, is a valid outcome: it happened in two of the
+last three runs.
+
+Then offer the composition as an option, in one line: "do you want me to
+compose a direction from pieces of several variants?". Do not launch it
+without a yes. If the answer is no, go to step 6.
+
+### Step 5 · Compose (optional, on request only)
+
+Launch **one Agent call** with `model: "sonnet"` and
 `subagent_type: "general-purpose"`. It receives the path of the divergence
 folder, the cleaned brief and the hard constraints. Its job is not to name a
 winner but to compose a direction:
@@ -167,19 +180,15 @@ Your final answer: the paths, and in three lines what the composed direction
 takes from whom.
 ```
 
-### Step 5 · The user decides
-
-Show them the four variants (open the pages or send the files), the
-attractor and the composition. **Their taste decides**, on visible pieces.
-There is no scoring between models. Keeping a single variant as it is, or the
-version that existed before the divergence, is a valid outcome.
+Show the composition next to the piece the user preferred. They decide again;
+going back to that piece is a valid outcome.
 
 ### Step 6 · Keep the trail
 
 In the divergence folder:
 
-- `direction.md`: the chosen direction, its rules and the validated
-  composition table;
+- `direction.md`: the chosen direction and its rules, plus the validated
+  composition table if there was one;
 - `bans.md`: add each of the user's rejections **with their verdict word for
   word**;
 - the variants stay where they are: they were used to compose the direction.
@@ -188,6 +197,7 @@ Nothing is applied to the real deliverable without the user asking for it.
 
 ## What we do not know yet
 
-See `docs/en/open-questions.md`. In short: one run per cell, two variables
-changed at once in the founding test, and in the two most recent runs the
-user kept one piece as it was rather than the composition.
+See `docs/en/open-questions.md`. In short: one run per cell, and two
+variables changed at once in the founding test. The composition became
+optional and moved from Opus to Sonnet after the two most recent runs, where
+the user kept one piece as it was.

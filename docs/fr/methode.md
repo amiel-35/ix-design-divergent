@@ -81,8 +81,9 @@ garder. *Cas 2, 4, 5.*
 
 Au cas 2, la direction retenue n'était aucune des propositions : c'était un
 assemblage (la grille de l'une, le disque de l'autre, « une teinte par
-catégorie » de la troisième). D'où l'étape 4 du skill. Mais aux cas 4 et 5,
+catégorie » de la troisième). D'où l'étape de composition du skill. Mais aux cas 4 et 5,
 la composition a été rejetée : trop chargée la première fois, « rien créé »
 la seconde. L'utilisateur a gardé une seule pièce telle quelle, la variante de
-rupture au cas 4 et sa propre version d'avant la divergence au cas 5. Voir
-[questions-ouvertes.md](questions-ouvertes.md).
+rupture au cas 4 et sa propre version d'avant la divergence au cas 5. Depuis, la composition est
+une option, proposée après que l'utilisateur a vu les variantes, et elle
+tourne sur Sonnet. Voir [questions-ouvertes.md](questions-ouvertes.md).

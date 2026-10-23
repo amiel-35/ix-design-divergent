@@ -28,10 +28,11 @@ not the model: it is the brief. This skill works on the brief.
    then is forbidden to make it.
 4. **Reads the defaults.** Side by side, the discarded defaults show the
    *attractor*: what bland looks like on this brief.
-5. **Composes.** An Opus agent proposes a direction made of pieces taken from
-   the variants, and says what it refuses to take from each.
-6. **You decide**, on visible pieces. Your rejections are kept word for word
-   as bans for the next round.
+5. **You decide**, on visible pieces. Keeping one variant as it is is a
+   valid outcome.
+6. **Composes, if you ask.** A Sonnet agent proposes a direction made of
+   pieces taken from several variants, and says what it refuses to take from
+   each. Your rejections are kept word for word as bans for the next round.
 
 ## Install
 
@@ -57,7 +58,7 @@ that matter, not for a touch-up.
   from.
 - [The five cases](docs/en/cases.md): real runs, anonymised.
 - [What we do not know yet](docs/en/open-questions.md), including why the
-  composition step was rejected in the two latest runs.
+  composition became optional.
 
 ## License
 
